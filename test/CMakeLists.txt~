@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.14)
+
+project(test_add_number)
+
+add_executable(test_add_number test_add_number.c)
+
+target_link_library(test_add_number add_number)
