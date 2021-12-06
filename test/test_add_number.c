@@ -1,12 +1,13 @@
 #include <add_five.h>
+#include <add_six.h>
 #include <stdio.h>
 
 int main()
 {
     int a = 7;
-    int b = add_five(a);
 
-    if (b == 12) {
+    if (add_five(a) == 12 && add_six(a) == 13)
+    {
         printf("PASS!\n");
         return 0;
     } else {
